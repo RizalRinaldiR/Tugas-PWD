@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #005aab;
+    color: #fff;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.logo img {
+    height: 75px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 80px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin-right: 70px;
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-menu li a:hover {
+    color: #f3f3f3;
+}
+
+.info-boxes-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.993);
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin-top: 250px;
+}
+
+.info-box h3 {
+    color: rgb(255, 255, 255); 
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #666;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.info-box img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.info-box a {
+    color: #000000; 
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+    
+}
+
+.info {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-color: #ffd900;
+}
+
+.info-inner {
+    display: flex;
+    align-items: center;
+}
+
+.info-inner img {
+    height: 50%;
+    margin-top: 30px;
+}
+
+.info-inner h3 {
+    margin-left: 30px;
+}
+
+.menu-container {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+
+.menu-icon .bar {
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 40px;
+    right: 0;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.background-image {
+    background-image: url(gambar/ui4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+}
+
+.secondary {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.news {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100%;
+    margin-right: 60px;
+    margin-top: 70px;
+}
+
+.video-section {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.video-section video {
+    flex: 1;
+    display: block;
+}
+
+.text-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: justify;
+    padding: 8px;
+}
+
+.news-image {
+    float: left;
+    margin: 0 8px 4px 0;
+}
+
+.news-image img {
+    width: 100px; 
+    height: auto; 
+}
+
+.news-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.isi-berita {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-date {
+    font-size: 14px;
+    color: rgb(119, 105, 105);
+    margin-bottom: 10px;
+}
+
+.title {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+
+.section-title {
+    margin-top: 25px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ffd900;
+    margin: 10px auto;
+}
+
+#footer {
+    background-color: #2b5797;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-brand img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-brand span {
+    font-size: 24px;
+}
+
+.address {
+    margin-bottom: 30px;
+}
+
+.widget {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.widget-header {
+    margin-bottom: 15px;
+}
+
+.widget-title {
+    font-size: 18px;
+}
+
+.widget-body p {
+    margin-bottom: 10px;
+}
+
+.widget-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget-body ul li {
+    margin-bottom: 5px;
+}
+
+.widget-body ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer-art {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.widget-body ul li a:hover {
+    color: #2b5797;
+}
+
+@media (max-width: 768px) {
+    .footer-body {
+        padding: 0;
+    }
+
+    .widget {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.widget-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-column > div {
+    margin-bottom: 30px;
+}
+
+.widget-column > div:last-child {
+    margin-bottom: 0;
+}
+
+.separator {
+    border-top: 1px solid white;
+    margin-top: 30px;
+}
+
+.footer-body .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-body .container {
+    width: 100%;
+}
+
+.footer-body .widget-column {
+    flex: 1;
+}
+
+footer > div.footer-top {
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+footer > div.footer-top > div.logo {
+    width: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+footer > div.footer-top > span {
+    font-weight: 100px;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer > div.footer-top > div.address {
+    display: inline-block;
+    position: absolute;
+    margin: 10px 50px 50px 300px;
+    width: 30%;
+}
+
+footer > div.footer-content {
+    display: flex;
+    margin-top: 50px;
+}
+
+footer > div.footer-content > ul {
+    display: inline-block;
+    margin: 0 5%;
+    height: 140px;
+}
+
+footer > div.footer-content > ul > li {
+    display: absolute;
+    margin-top: 0%;
+    float: inline-end;
+    list-style: none;
+}
+
+li > h3 {
+    margin-bottom: 5%;
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.footer-bottom img {
+    width: 100%; 
+    height: 200px; 
+}
+
+#scroll-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    opacity: 0.5; 
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#scroll-to-top:hover {
+    opacity: 1; 
+}
+
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content .intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.main-content .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .content .text-section {
+    width: 65%;
+}
+
+.main-content .content .text-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-content .content .text-section h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.main-content .content .image-section {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.main-content .content .image-section img {
+    width: 100%;
+    border-radius: 5px;
+}
